@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compani profile</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div><img src="./assets/LOGO COMPANY.png" class="logo"></a></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ourprofile">Ourprofile</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#messageuse">Message use</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div><img src="./assets/LOGO COMPANY.png" class="logo"></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#ourprofile" onclick="toggleMenu()">Ourprofile</a></li>
+        <li><a href="#portofolio" onclick="toggleMenu()">portofolio</a></li>
+        <li><a href="#messageuse" onclick="toggleMenu()">message</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="Profiletelkom">
+    <div >
+      <div class="animate-welcome">
+        <h1>Welcome to Our Website!</h1>
+      </div>
+    </div>
+
+  </section>
+  <section id="ourprofile">
+    <h2>Our Profile</h2>
+    <p>
+      PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa
+      layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia. Pemegang saham
+      mayoritas Telkom adalah Pemerintah Republik Indonesia sebesar 52.09%, sedangkan 47.91% sisanya dikuasai oleh
+      publik. Saham Telkom diperdagangkan di Bursa Efek Indonesia (BEI) dengan kode “TLKM” dan New York Stock Exchange
+      (NYSE) dengan kode “TLK”.
+
+      Dalam upaya bertransformasi menjadi digital telecommunication company, TelkomGroup mengimplementasikan strategi
+      bisnis dan operasional perusahaan yang berorientasi kepada pelanggan (customer-oriented). Transformasi tersebut
+      akan membuat organisasi TelkomGroup menjadi lebih lean (ramping) dan agile (lincah) dalam beradaptasi dengan
+      perubahan industri telekomunikasi yang berlangsung sangat cepat. Organisasi yang baru juga diharapkan dapat
+      meningkatkan efisiensi dan efektivitas dalam menciptakan customer experience yang berkualitas.
+
+      Kegiatan usaha TelkomGroup bertumbuh dan berubah seiring dengan perkembangan teknologi, informasi dan
+      digitalisasi, namun masih dalam koridor industri telekomunikasi dan informasi. Hal ini terlihat dari lini bisnis
+      yang terus berkembang melengkapi legacy yang sudah ada sebelumnya.
+
+    </p>
+
+      </div>
+  </section>
+  <section id="portofolio">
+    <div class="container">
+      <!-- Add your portfolio content here -->
+      <h2>Portfolio</h2>
+      <div class="portfolio-circles">
+        <div class="circle">Jakarta</div>
+        <div class="circle">Surabaya</div>
+        <div class="circle">Tangerang</div>
+      </div>
+    </div>
+  </section>
+  <section id="messageuse">
+    <h2>Message Us</h2>
+    <div class="container">
+      <!-- Add your message form here -->
+      <div class="message-container">
+        <form id="messageForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="submittedMessages"></div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
